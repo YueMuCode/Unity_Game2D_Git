@@ -1,0 +1,4 @@
+repository "MyGame2D@yuemulin@cloud.cn"
+  path "/"
+    br "/main"
+    co "/main"
