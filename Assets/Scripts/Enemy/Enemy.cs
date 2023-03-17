@@ -26,6 +26,9 @@ public class Enemy : MonoBehaviour
 
     public PatrolState patrolState = new PatrolState();//获取Patrolstate类的对象
     public AttackState attackState = new AttackState();//来获取攻击状态的对象
+
+    [Header("HealthBar")]
+    public NormalHealthBar normalHealthBar;
     
     public virtual void Init()//这个方法的作用是获取动画机等一系列组件,单独一个函数的作用是，方便后面继承的子类，需要额外获取另外的组件
     {
@@ -40,12 +43,14 @@ public class Enemy : MonoBehaviour
 
     public void Start()
     {
+        normalHealthBar = GetComponent<NormalHealthBar>();
         TransitionToState(patrolState);
         if(isBoss)//如果是boss就把血量传给UI管理着
         {
             UIManager.instance.SetBossHealth(health);
           
         }
+        normalHealthBar.SetNormalHealthBar(health);
         GameManager.instance.AddEnemy(this);
     }
     public virtual void Update()

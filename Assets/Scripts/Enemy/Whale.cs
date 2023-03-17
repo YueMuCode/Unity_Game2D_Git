@@ -8,6 +8,7 @@ public class Whale : Enemy, IDamageable
     {
    
             health -= damage;
+         normalHealthBar.UpdateNormalHealthBar(health);
             if (health < 1)
             {
                 health = 0;

@@ -10047,20 +10047,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5715230851936440981, guid: aef0cfd7f1f1c324296aa1d31ed2bd21,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5715230851936440981, guid: aef0cfd7f1f1c324296aa1d31ed2bd21,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7574525246847063218, guid: aef0cfd7f1f1c324296aa1d31ed2bd21,
         type: 3}
       propertyPath: m_Name
       value: Cucumber
       objectReference: {fileID: 0}
-    - target: {fileID: 7574525246847063218, guid: aef0cfd7f1f1c324296aa1d31ed2bd21,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7574525246847063219, guid: aef0cfd7f1f1c324296aa1d31ed2bd21,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.57
       objectReference: {fileID: 0}
     - target: {fileID: 7574525246847063219, guid: aef0cfd7f1f1c324296aa1d31ed2bd21,
         type: 3}
@@ -10111,11 +10116,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7574525247258538244, guid: aef0cfd7f1f1c324296aa1d31ed2bd21,
-        type: 3}
-      propertyPath: health
-      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aef0cfd7f1f1c324296aa1d31ed2bd21, type: 3}

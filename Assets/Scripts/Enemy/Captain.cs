@@ -8,6 +8,7 @@ public class Captain : Enemy, IDamageable
     public void GetHit(float damage)
     {
         health -= damage;
+        normalHealthBar.UpdateNormalHealthBar(health);
         if(health<1)
         {
             health = 0;

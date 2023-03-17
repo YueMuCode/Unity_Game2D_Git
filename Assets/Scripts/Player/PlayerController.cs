@@ -81,25 +81,26 @@ public class PlayerController : MonoBehaviour,IDamageable
     void Movement()//控制移动的方法
     {
         //键盘操作
-        // float x = Input.GetAxisRaw("Horizontal");//按下ad或者左右键，x的值在-1到1 之间变化（有Raw不包括小数）
+         float x = Input.GetAxisRaw("Horizontal");//按下ad或者左右键，x的值在-1到1 之间变化（有Raw不包括小数）
+        if (x != 0)
+        {
+            transform.localScale = new Vector3(x, 1, 1);//将scale或者rotation的x值变化到达翻转的效果  
+        }
         // Debug.Log(x);
 
         //操作杆
-        float x = joystick.Horizontal;
+      // float x = joystick.Horizontal;
         rb.velocity = new Vector2(x * speed, rb.velocity.y);//利用刚体组件，控制人物的移动，x轴给一个速度和方向的乘积，y保持不变
 
-        //if(x!=0)
+       
+        //if (x>0)
         //{
-        //    transform.localScale = new Vector3(x, 1, 1);//将scale或者rotation的x值变化到达翻转的效果  
+        //    transform.eulerAngles = new Vector3(0, 0, 0);
         //}
-        if(x>0)
-        {
-            transform.eulerAngles = new Vector3(0, 0, 0);
-        }
-        if(x<0)
-        {
-            transform.eulerAngles = new Vector3(0, 180, 0);
-        }
+        //if(x<0)
+        //{
+        //    transform.eulerAngles = new Vector3(0, 180, 0);
+        //}
 
     }
 
