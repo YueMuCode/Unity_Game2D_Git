@@ -15,7 +15,8 @@ public class BIgGuy : Enemy,IDamageable
         {
             health = 0;
             isDead = true;
-            Destroy(normalHealthBar.transform.gameObject);//怪物死亡后血条消失
+            Destroy(normalHealthBar.transform.gameObject, 1f);//怪物死亡后血条消失
+            UIManager.instance.AddScore(10);
         }
         
     }

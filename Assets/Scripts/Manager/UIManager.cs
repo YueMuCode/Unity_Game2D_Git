@@ -11,6 +11,8 @@ public class UIManager : MonoBehaviour
     public GameObject pauseMenu;
     public GameObject healthBar;
     public GameObject gameOverPanel;
+    public Text Score;
+    public int currentScore;
     public void Awake()
     {
         if(instance==null)
@@ -21,6 +23,7 @@ public class UIManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        
     }
 
     public void UpdateHealth(float currentHealth)
@@ -74,5 +77,15 @@ public class UIManager : MonoBehaviour
     public void GameOverUI(bool gameOver)
     {
         gameOverPanel.SetActive(gameOver);
+    }
+    public void SetScore()
+    {
+        currentScore = 0;
+        Score.text = currentScore.ToString();
+    }
+    public void AddScore(int socre)
+    {
+        currentScore += socre;
+        Score.text = currentScore.ToString();
     }
 }

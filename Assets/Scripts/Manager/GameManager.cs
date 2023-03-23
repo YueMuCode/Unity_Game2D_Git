@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;//实现单例
     public bool gameOver;
 
+    private int score;
     public List<Enemy> enemies = new List<Enemy>();
     public void Awake()
     {
@@ -95,12 +96,18 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetFloat("playerHealth", 3f);
         }
         float currentHealth = PlayerPrefs.GetFloat("playerHealth");
-        
+      
         return currentHealth;
+    }
+    public float LoadScore()
+    {
+        float currentScore = PlayerPrefs.GetFloat("playerScore");
+        return currentScore;
     }
     public void SaveData()
     {
         PlayerPrefs.SetFloat("playerHealth", player.health);
+        PlayerPrefs.SetFloat("playerScore", UIManager.instance.currentScore);
         PlayerPrefs.SetInt("sceneIndex", SceneManager.GetActiveScene().buildIndex + 1);
         PlayerPrefs.Save();
     }

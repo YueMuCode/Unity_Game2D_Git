@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour,IDamageable
     [Header("Attack Settings")]
     public GameObject bombPrefab;//获取炸弹的预制体
     public float nextAttack = 0;//攻击冷却时间冷却时间
-    public float attackRate;
+    public float attackRate = 2f;
 
 
     // Start is called before the first frame update
@@ -42,6 +42,7 @@ public class PlayerController : MonoBehaviour,IDamageable
         GameManager.instance.IsPlayer(this);
         health = GameManager.instance.LoadHealth();
         UIManager.instance.UpdateHealth(health);
+        UIManager.instance.AddScore((int)GameManager.instance.LoadScore());
         joystick = FindObjectOfType<FixedJoystick>();
     }
 
