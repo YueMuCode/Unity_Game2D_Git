@@ -560,6 +560,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4821894679709082927}
     m_Modifications:
+    - target: {fileID: 2916660817234304298, guid: 4a1a823e18763284d810c9625ccd4e28,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.3529412
+      objectReference: {fileID: 0}
+    - target: {fileID: 2916660817234304298, guid: 4a1a823e18763284d810c9625ccd4e28,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.9150943
+      objectReference: {fileID: 0}
+    - target: {fileID: 2916660817234304298, guid: 4a1a823e18763284d810c9625ccd4e28,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.17697577
+      objectReference: {fileID: 0}
+    - target: {fileID: 2916660817234304298, guid: 4a1a823e18763284d810c9625ccd4e28,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.17697577
+      objectReference: {fileID: 0}
     - target: {fileID: 6320426912906772221, guid: 4a1a823e18763284d810c9625ccd4e28,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -574,6 +594,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Normal Health Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8618459734579735870, guid: 4a1a823e18763284d810c9625ccd4e28,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2144654239
       objectReference: {fileID: 0}
     - target: {fileID: 8858456139207863797, guid: 4a1a823e18763284d810c9625ccd4e28,
         type: 3}

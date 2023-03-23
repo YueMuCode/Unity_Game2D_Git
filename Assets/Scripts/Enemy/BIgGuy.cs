@@ -8,14 +8,16 @@ public class BIgGuy : Enemy,IDamageable
     public float power;
     public void GetHit(float damage)
     {
+        anim.SetTrigger("Hit");
         health -= damage;
         normalHealthBar.UpdateNormalHealthBar(health);
-        if (health < 1)
+        if (health <=0)
         {
             health = 0;
             isDead = true;
+            Destroy(normalHealthBar.transform.gameObject);//怪物死亡后血条消失
         }
-        anim.SetTrigger("hit");
+        
     }
     public void PickBomb()//动画事件调用
     {

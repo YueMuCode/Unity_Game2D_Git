@@ -8,12 +8,13 @@ public class Whale : Enemy, IDamageable
     {
    
             health -= damage;
-         normalHealthBar.UpdateNormalHealthBar(health);
-            if (health < 1)
+            normalHealthBar.UpdateNormalHealthBar(health);
+            if (health <=0)
             {
                 health = 0;
                 isDead = true;
-            }
+            Destroy(normalHealthBar.transform.gameObject);//怪物死亡后血条消失
+        }
             anim.SetTrigger("Hit");
      }
 

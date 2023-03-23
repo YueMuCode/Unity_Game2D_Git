@@ -73,7 +73,7 @@ public class PlayerController : MonoBehaviour,IDamageable
         {
             canJump = true;
         }
-        if(Input.GetKeyDown(KeyCode.J))
+        if(Input.GetKeyDown(KeyCode.K))
         {
             Attack();
         }

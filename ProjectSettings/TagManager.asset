@@ -21,7 +21,7 @@ TagManager:
   - Bomb
   - Player
   - CheckArea
-  - 
+  - shoot
   - 
   - 
   - 
@@ -44,4 +44,7 @@ TagManager:
     locked: 0
   - name: NPC
     uniqueID: 2150313057
+    locked: 0
+  - name: zidan
+    uniqueID: 3290104977
     locked: 0

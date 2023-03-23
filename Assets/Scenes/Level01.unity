@@ -9590,6 +9590,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red Bottle (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4688245307183965525, guid: 9c7a08a186246214487c5708e2aca56f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c7a08a186246214487c5708e2aca56f, type: 3}
 --- !u!1001 &4821894679352535718
@@ -9821,10 +9826,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 113742986, guid: a06c859e4f4f8004db5b7b92040ec6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 113742988, guid: a06c859e4f4f8004db5b7b92040ec6ec, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 556328912}
+    - target: {fileID: 183940440, guid: a06c859e4f4f8004db5b7b92040ec6ec, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 183940442, guid: a06c859e4f4f8004db5b7b92040ec6ec, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -9968,6 +9981,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 9210354996515770694, guid: a06c859e4f4f8004db5b7b92040ec6ec,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a06c859e4f4f8004db5b7b92040ec6ec, type: 3}

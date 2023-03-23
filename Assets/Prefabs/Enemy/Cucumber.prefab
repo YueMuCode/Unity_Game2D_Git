@@ -527,6 +527,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7574525247258538247}
     m_Modifications:
+    - target: {fileID: 2916660817234304298, guid: 4a1a823e18763284d810c9625ccd4e28,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 0.2901961
+      objectReference: {fileID: 0}
+    - target: {fileID: 2916660817234304298, guid: 4a1a823e18763284d810c9625ccd4e28,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.9811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 2916660817234304298, guid: 4a1a823e18763284d810c9625ccd4e28,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.46781987
+      objectReference: {fileID: 0}
+    - target: {fileID: 2916660817234304298, guid: 4a1a823e18763284d810c9625ccd4e28,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.45817015
+      objectReference: {fileID: 0}
+    - target: {fileID: 5786116139718366082, guid: 4a1a823e18763284d810c9625ccd4e28,
+        type: 3}
+      propertyPath: m_Value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5786116139718366082, guid: 4a1a823e18763284d810c9625ccd4e28,
+        type: 3}
+      propertyPath: m_Direction
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6320426912906772221, guid: 4a1a823e18763284d810c9625ccd4e28,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -537,10 +567,20 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6320426912906772221, guid: 4a1a823e18763284d810c9625ccd4e28,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8094527569779726880, guid: 4a1a823e18763284d810c9625ccd4e28,
         type: 3}
       propertyPath: m_Name
       value: Normal Health Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 8618459734579735870, guid: 4a1a823e18763284d810c9625ccd4e28,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -2144654239
       objectReference: {fileID: 0}
     - target: {fileID: 8858456139207863797, guid: 4a1a823e18763284d810c9625ccd4e28,
         type: 3}
